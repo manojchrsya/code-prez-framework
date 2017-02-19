@@ -2,7 +2,7 @@
 
 
 # Step 1:
-  - Install Redis in system to store the session data.
+  - Install Nodemon and Redis.
   
 # Step 2:
   - Initialise knex (to create and run knex migrations) and run below commands.
@@ -17,6 +17,9 @@
     $ npm install
     $ npm start
 ```
+# Dependencies
+	    - Nodemon
+    	- Redis
 
 # License
 ---
