@@ -5,16 +5,16 @@
 	"mysql": {
 		"master": {
 			"host": "localhost",
-			"user": "DB_USER",
-			"password": "DB_PASSWORD",
-			"database": "DB_NAME",
+			"user": "root",
+			"password": "root",
+			"database": "local_db",
 			"charset": "utf8"
 		},
 		"slave": {
 			"host": "localhost",
-			"user": "DB_USER",
-			"password": "DB_PASSWORD",
-			"database": "DB_NAME",
+			"user": "root",
+			"password": "root",
+			"database": "local_db",
 			"charset": "utf8"
 		}
 	},
