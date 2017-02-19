@@ -11,7 +11,7 @@ if (process.argv[2] === undefined) {
 var codeprez = require('./lib'),
 
 /**
- * Expose `code prez()`.
+ * Expose `codeprez()`.
  */
 
 exports = module.exports = new codeprez();
