@@ -8,5 +8,17 @@
 			"route" :  "getHomePage",
 			"policy" : []
 		}
+	},
+	"/login":{
+		"POST" : {
+			"route" :  "userLogin",
+			"policy" : ["validateProfile:validateLogin"]
+		}
+	},
+	"/logout":{
+		"GET" : {
+			"route" :  "userLogout",
+			"policy" : []
+		}
 	}
 }

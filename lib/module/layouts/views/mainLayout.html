@@ -15,19 +15,21 @@
   {% endblock %}
 
   {% block head_css %}
-    <link href="{{ siteurl }}/static/css/style_default.css?v={{ envConfig['version'] }}" rel="stylesheet" />
      <!-- Bootstrap Core CSS -->
-    <link href="{{ siteurl }}/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ siteurl }}/static/bootstrap/css/bootstrap.min.css?v={{ envConfig['version'] }}" rel="stylesheet">
 
     <!-- Theme CSS -->
-    <link href="{{ siteurl }}/static/css/freelancer.min.css" rel="stylesheet">
+    <link href="{{ siteurl }}/static/css/freelancer.min.css?v={{ envConfig['version'] }}" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="{{ siteurl }}/static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="{{ siteurl }}/static/font-awesome/css/font-awesome.min.css?v={{ envConfig['version'] }}" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  {% endblock %}
+    
+     <!-- jQuery -->
+    <script src="{{ siteurl }}/static/js/jquery.min.js?v={{ envConfig['version'] }}"></script>
 
+  {% endblock %}
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -38,27 +40,24 @@
 <body id="page-top" class="index">
 
    {% include 'partials/navigation.html' %}
+   {% include 'partials/login-modal.html' %}
     <!-- Header -->
     {% block content %}
 
     {% endblock %} 
 
     {% block head_js %}
-      <script src="{{ siteurl }}/static/js/breakpoints.js?v={{ envConfig['version'] }}"></script>
-      <!-- jQuery -->
-      <script src="{{ siteurl }}/static/js//jquery.min.js"></script>
-
       <!-- Bootstrap Core JavaScript -->
-      <script src="{{ siteurl }}/static/bootstrap/js/bootstrap.min.js"></script>
+      <script src="{{ siteurl }}/static/bootstrap/js/bootstrap.min.js?v={{ envConfig['version'] }}"></script>
 
       <!-- Plugin JavaScript -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
       <!-- Contact Form JavaScript -->
-      <script src="{{ siteurl }}/static/js/jqBootstrapValidation.js"></script>
+      <script src="{{ siteurl }}/static/js/jqBootstrapValidation.js?v={{ envConfig['version'] }}"></script>
 
       <!-- Theme JavaScript -->
-      <script src="{{ siteurl }}/static/js/freelancer.min.js"></script>
+      <script src="{{ siteurl }}/static/js/freelancer.min.js?v={{ envConfig['version'] }}"></script>
     {% endblock %}
 
     {% block customScripts %}

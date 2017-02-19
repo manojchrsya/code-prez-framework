@@ -1,0 +1,28 @@
+{
+	"mode" : "development",
+	"port" : 3050,
+	"siteUrl": "http://localhost:3050",
+	"mysql": {
+		"master": {
+			"host": "localhost",
+			"user": "root",
+			"password": "root",
+			"database": "local_db",
+			"charset": "utf8"
+		},
+		"slave": {
+			"host": "localhost",
+			"user": "root",
+			"password": "root",
+			"database": "local_db",
+			"charset": "utf8"
+		}
+	},
+	"redis": {
+	   	"host": "127.0.0.1",
+	   	"port": "6379",
+	   	"database": 0
+	},
+	"result_per_page": 10,
+	"version": "1.0"
+}
