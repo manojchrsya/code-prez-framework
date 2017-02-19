@@ -24,20 +24,22 @@ Install required NPM packages and Initialise knex (to create and run knex migrat
 Update knexfile.js file with required details for **Mysql** please see below code.
 
 ```json
-development: {
-    client: 'mysql',
-    connection: {
-        database: 'DB_NAME',
-        user:     'DB_USER',
-        password: 'DB_PASSWORD'
-    },
-    pool: {
-        min: 2,
-        max: 10
-    },
-    migrations: {
-        tableName: 'knex_migrations'
-    }
+{
+	development: {
+	    client: 'mysql',
+	    connection: {
+	        database: 'DB_NAME',
+	        user:     'DB_USER',
+	        password: 'DB_PASSWORD'
+	    },
+	    pool: {
+	        min: 2,
+	        max: 10
+	    },
+	    migrations: {
+	        tableName: 'knex_migrations'
+	    }
+	}    
 }
 ```
 

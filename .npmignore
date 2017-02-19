@@ -1,0 +1,6 @@
+/node_modules
+/lib/config
+/knexfile.js
+npm-debug.log
+/logs
+/knexfile.js
