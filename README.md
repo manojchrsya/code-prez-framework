@@ -23,9 +23,6 @@ Update development.json file with required attributes like DB_USER, DB_PASSWORD,
 Install required NPM packages and Initialise knex (to create and run knex migrations) and run below commands.
 
 ```sh
-	$ npm install code-prez-framework -g
-	$ codeprez create myapp
-	$ cd myapp
 	$ npm install
     $ npm install knex -g
     $ knex init
