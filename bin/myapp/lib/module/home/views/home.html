@@ -1,0 +1,28 @@
+{% extends "mainLayout.html" %}
+<!-- you can extends the layouts blocks -->
+{% block content %}
+    {% include 'partials/header.html' %}
+
+    <!-- Portfolio Grid Section -->
+    {% include 'partials/portfolio.html' %}
+
+    <!-- About Section -->
+    {% include 'partials/about.html' %}
+
+    <!-- Contact Section -->
+    {# include 'partials/contact.html' #}
+
+    <!-- Footer -->
+    {% include 'partials/footer.html' %}
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+   {% include 'partials/portfolio-modals.html' %}
+
+{% endblock %}

@@ -16,6 +16,9 @@
     "framework"
   ],
   "author": "manoj chaurasiya",
+  "bin": {
+    "codeprez": "./bin/codeprez.js"
+  },
   "license": "ISC",
   "dependencies": {
     "async": "~2.0.0-rc.3",
@@ -52,6 +55,7 @@
     "winston": "^2.3.0"
   },
   "devDependencies": {
+    "mkdirp": "^0.5.1",
     "nodemon": "^1.11.0"
   },
   "bugs": {

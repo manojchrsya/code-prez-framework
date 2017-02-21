@@ -1,0 +1,24 @@
+{
+	"GLOBAL" : {
+		"controllerPath" : "./lib/module/home/controller",
+		"policyPath"	: 	"./lib/module/home/policy"
+	},
+	"/":{
+		"GET" : {
+			"route" :  "getHomePage",
+			"policy" : []
+		}
+	},
+	"/login":{
+		"POST" : {
+			"route" :  "userLogin",
+			"policy" : ["validateProfile:validateLogin"]
+		}
+	},
+	"/logout":{
+		"GET" : {
+			"route" :  "userLogout",
+			"policy" : []
+		}
+	}
+}

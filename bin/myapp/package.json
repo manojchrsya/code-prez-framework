@@ -1,0 +1,11 @@
+{
+  "name": "myapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon -e '.js,.html,.json' app.js"
+  },
+  "dependencies": {
+    "code-prez-framework": "1.0.1"
+  }
+}

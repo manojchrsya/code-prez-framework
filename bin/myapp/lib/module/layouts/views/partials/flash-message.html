@@ -1,0 +1,29 @@
+{% if _.isObject(flash_message['error_message'][0]) %}
+	{% set errors = flash_message['error_message'][0]['errors'] %}
+<div id="flash" class="alert alert-dismissible alert-error">
+	<button type="button" data-dismiss="alert" class="close"  style="right: 0px;"></button>
+	{% if _.isArray(errors) %}
+		{% for error in errors %}
+			<strong>{{ error }}</strong> <br>
+		{% endfor %}
+	{% else %}
+		{% for key, value in errors %}
+			{% for error in value %}
+				<strong>{{ error }}</strong> <br>
+			{% endfor %}	
+		{% endfor %}
+	{% endif %}	
+</div>
+{% elif flash_message['error_message'] %}
+<div id="flash" class="alert alert-dismissible alert-error">
+	<button type="button" data-dismiss="alert" class="close" style="right: 0px;"></button>
+	<strong> {{ flash_message['error_message'] }}</strong>
+</div>
+{% endif %}
+
+{% if flash_message['success_message'] %}
+<div id="flash" class="alert alert-dismissible alert-success">
+	<button type="button" data-dismiss="alert" class="close"   style="right: 0px;"></button>
+	<strong>{{ flash_message['success_message'] }}</strong>
+</div>
+{% endif %}

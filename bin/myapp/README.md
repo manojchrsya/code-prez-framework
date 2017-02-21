@@ -7,30 +7,19 @@ Install Nodemon and Redis.
 
 # Step 2:
 
-Install code-prez-framework globally.
-
-```sh
-	$ npm install code-prez-framework -g
-	$ codeprez create myapp
-	$ cd myapp
-```
-# Step 3:
-
 Update development.json file with required attributes like DB_USER, DB_PASSWORD, DB_NAME.
   
-# Step 4:
+# Step 3:
 
 Install required NPM packages and Initialise knex (to create and run knex migrations) and run below commands.
 
 ```sh
-	$ npm install code-prez-framework -g
-	$ codeprez create myapp
-	$ cd myapp
 	$ npm install
     $ npm install knex -g
     $ knex init
+   
 ```
-# Step 5:
+# Step 4:
 
 Update knexfile.js file with required details for **Mysql** please see below code.
 
@@ -54,16 +43,17 @@ Update knexfile.js file with required details for **Mysql** please see below cod
 }
 ```
 
-# Step 6:
+# Step 5:
 
 ```sh
 	$ knex migrate:latest
     $ knex seed:run
+    $ npm install
     $ npm start
 ```
 # Dependencies
-   	- Nodemon
-    - Redis
+	    - Nodemon
+    	- Redis
 
 # License
 ---
