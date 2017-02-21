@@ -1,6 +1,6 @@
 {
   "name": "code-prez-framework",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "complete package to get started with node js to build website",
   "main": "app.js",
   "scripts": {
