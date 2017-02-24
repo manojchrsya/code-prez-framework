@@ -81,7 +81,7 @@ function loadTemplate(name, next) {
 function copy_template(from, to, next) {
   var relativePath = from.replace(path.join(__dirname, '..') , "")
   to = to + relativePath;
-  write(to, fs.readFileSync(from, 'utf-8'), function(response){
+  write(to, fs.readFileSync(from), function(response){
     next();
   });
 }
