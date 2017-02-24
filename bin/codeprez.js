@@ -22,7 +22,7 @@ program.on('--help', function(){
 });
 
 // list all directory and files to be copied
-var  copyFiles = ['assets', 'lib', 'migrations', 'seeds', 'app.js', 'LICENSE', 'README.md'];
+var  copyFiles = ['assets', 'config', 'lib', 'migrations', 'seeds', 'app.js', 'LICENSE', 'README.md'];
 
 program
   .command('create <app_name>')
@@ -46,9 +46,8 @@ function createApp(appName){
         version: "0.0.0",
         private: true,
         scripts: pkg.scripts,
-        dependencies: {
-          'code-prez-framework': pkg.version,
-        }
+        dependencies: pkg.dependencies,
+        devDependencies: pkg.devDependencies
       }
     write(this.appName+"/package.json", JSON.stringify(_pkg, null, 2) + '\n');
     write(this.appName+"/logs/error.log");
